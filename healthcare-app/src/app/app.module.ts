@@ -7,10 +7,12 @@ import { MaterializeModule } from "angular2-materialize";
 import { AppComponent } from './app.component';
 import { HttpModule } from '@angular/http';
 import { DataService } from './data.service';
+import { HomeHeaderComponent } from './home-header/home-header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeHeaderComponent
   ],
   imports: [
     BrowserModule,
