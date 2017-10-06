@@ -5,6 +5,8 @@ import 'materialize-css';
 import { MaterializeModule } from "angular2-materialize";
 // Components
 import { AppComponent } from './app.component';
+import { HttpModule } from '@angular/http';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    MaterializeModule
+    MaterializeModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
