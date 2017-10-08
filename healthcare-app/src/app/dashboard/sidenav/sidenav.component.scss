@@ -1,0 +1,46 @@
+nav {
+    background-color: unset;
+    box-shadow: unset;
+    ul {
+        .doctorName {
+            line-height: 25px;
+            justify-content: center;
+            span {
+                font-weight: 500;
+            }
+        }
+        li {
+            &.active {
+                background-color: #0288d1;
+                border-left: 4px #ffc107 solid;
+            }
+            &:first-child {
+                margin-top: 3.5em;
+                justify-content: center;
+            }
+            &:nth-child(3) {
+                margin-top: 3.5em;
+            }
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            img {
+                width: 30%;
+            }
+            a {
+                color: #fff;
+                display: flex;
+                padding: 0;
+                padding-left: 5%;
+                line-height: 66px;
+                &:hover {
+                    background-color: unset;
+                }
+                i {
+                    padding-right: 15px;
+                    line-height: 66px;
+                }
+            }
+        }
+    }
+}

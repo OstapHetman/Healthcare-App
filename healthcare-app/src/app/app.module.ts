@@ -59,7 +59,7 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     HttpModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [DataService, AuthService, AUTH_PROVIDERS,
+  providers: [DataService, AuthService,
     {
       provide: AuthHttp,
       useFactory: authHttpServiceFactory,

@@ -1,8 +1,11 @@
-$mainBg: #0277bd;
-$headerBg: #039be5;
+$mainBg: #03a9f4;
+$headerBg: #0288d1;
+$contentBg: #eee;
 .sidenav {
     background-color: $mainBg;
     margin-top: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 nav {
@@ -17,4 +20,8 @@ nav {
     i {
         color: #fff;
     }
+}
+
+.content {
+    background-color: $contentBg;
 }
