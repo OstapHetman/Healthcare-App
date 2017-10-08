@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 declare var $:any;
+import { AuthService } from '../services/auth.service';
 
 @Component({
   selector: 'home-header',
@@ -9,7 +10,8 @@ declare var $:any;
 })
 export class HomeHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private auth: AuthService) { }
+  
 
   ngOnInit() {
     $(".button-collapse").sideNav();

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from './services/auth.service';
 
 // Import the DataService
 import { DataService } from './data.service';
@@ -9,14 +10,7 @@ import { DataService } from './data.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  // Define a users property to hold our user data
-  users: Array<any>;
-  
-    // Create an instance of the DataService through dependency injection
-    constructor(private _dataService: DataService) {
-  
-      // Access the Data Service's getUsers() method we defined
-      this._dataService.getUsers()
-          .subscribe(res => this.users = res);
+    constructor(private auth: AuthService) {
+ 
     }
 }
