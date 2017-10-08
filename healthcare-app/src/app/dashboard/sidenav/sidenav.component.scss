@@ -10,6 +10,14 @@ nav {
             }
         }
         li {
+            .circleActive {
+                width: 15px;
+                height: 15px;
+                background-color: #cddc39;
+                position: relative;
+                left: 28%;
+                border-radius: 50%;
+            }
             &.active {
                 background-color: #0288d1;
                 border-left: 4px #ffc107 solid;

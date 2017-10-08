@@ -22,6 +22,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AuthService } from './services/auth.service';
 import { SidenavComponent } from './dashboard/sidenav/sidenav.component';
+import { ProfilePageComponent } from './dashboard/profile-page/profile-page.component';
+import { PatientsPageComponent } from './dashboard/patients-page/patients-page.component';
+import { LaboratoryPageComponent } from './dashboard/laboratory-page/laboratory-page.component';
+import { CalendarPageComponent } from './dashboard/calendar-page/calendar-page.component';
 
 
 export const routes: Routes = [
@@ -29,7 +33,13 @@ export const routes: Routes = [
       { path: 'about-page', component: AboutPageComponent },
       { path: 'contact-page', component: ContactPageComponent },
       { path: 'login-page', component: LoginPageComponent },
-      { path: 'dashboard', component: DashboardComponent }
+      { path: 'dashboard', component: DashboardComponent ,
+       children :[
+      { path: 'profile-page', outlet: 'dashboardContent', component: ProfilePageComponent },
+      { path: 'patients-page', outlet: 'dashboardContent', component: PatientsPageComponent },
+      { path: 'laboratory-page', outlet: 'dashboardContent', component: LaboratoryPageComponent },
+      { path: 'calendar-page', outlet: 'dashboardContent', component: CalendarPageComponent }
+       ]},
 ];
 
 export function authHttpServiceFactory(http: Http, options: RequestOptions) {
@@ -52,6 +62,10 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     DashboardComponent,
     HomePageComponent,
     SidenavComponent,
+    ProfilePageComponent,
+    PatientsPageComponent,
+    LaboratoryPageComponent,
+    CalendarPageComponent,
   ],
   imports: [
     BrowserModule,
