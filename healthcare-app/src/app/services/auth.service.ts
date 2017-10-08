@@ -5,7 +5,7 @@ import * as auth0 from 'auth0-js';
 
 @Injectable()
 export class AuthService {
-
+  
   auth0 = new auth0.WebAuth({
     clientID: 'r7rWN3nNJ3DSHmfbF4x2S9q5K3mTfFae',
     domain: 'healthcare.eu.auth0.com',
@@ -15,9 +15,12 @@ export class AuthService {
     scope: 'openid'
   });
 
-  constructor(public router: Router) {}
+  constructor(public router: Router) {
+
+  }
 
   public login(): void {
     this.auth0.authorize();
   }
+  
 }

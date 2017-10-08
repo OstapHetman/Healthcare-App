@@ -1,0 +1,20 @@
+$mainBg: #0277bd;
+$headerBg: #039be5;
+.sidenav {
+    background-color: $mainBg;
+    margin-top: 80px;
+}
+
+nav {
+    height: 80px;
+    background-color: $headerBg;
+    .nav-wrapper {
+        line-height: 80px;
+        ul {
+            padding-top: 5px;
+        }
+    }
+    i {
+        color: #fff;
+    }
+}

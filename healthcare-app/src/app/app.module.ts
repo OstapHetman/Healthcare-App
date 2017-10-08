@@ -21,6 +21,7 @@ import { AboutPageComponent } from './about-page/about-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AuthService } from './services/auth.service';
+import { SidenavComponent } from './dashboard/sidenav/sidenav.component';
 
 
 export const routes: Routes = [
@@ -49,7 +50,8 @@ export function authHttpServiceFactory(http: Http, options: RequestOptions) {
     ContactPageComponent,
     AboutPageComponent,
     DashboardComponent,
-    HomePageComponent
+    HomePageComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,
