@@ -1,0 +1,50 @@
+$goodState: #cddc39;
+$fairState: #ffc107;
+$seriousState: #ef5350;
+$alert: #ffc107;
+.patientsTable {
+    tbody {
+        td {
+            padding: 5px 5px;
+        }
+    }
+    .goodState {
+        background-color: $goodState;
+        padding: 2px 15px 2px 15px;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 500;
+    }
+    .fairState {
+        background-color: $fairState;
+        @extend .goodState;
+    }
+    .seriousState {
+        background-color: $seriousState;
+        @extend .goodState;
+    }
+    .alert {
+        span {
+            background-color: $alert;
+            width: 24px;
+            margin: 0 auto;
+            height: 24px;
+            border-radius: 50%;
+            display: block;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    .patientImageAndPhoto {
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+    }
+    img {
+        &.patientImage {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+    }
+}

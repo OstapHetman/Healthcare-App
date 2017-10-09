@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $:any;
 
 @Component({
   selector: 'patients-page',
@@ -10,6 +11,7 @@ export class PatientsPageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('.collapsible').collapsible();
   }
 
 }
