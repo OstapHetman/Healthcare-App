@@ -1,6 +1,7 @@
 $mainBg: #03a9f4;
 $headerBg: #0288d1;
 $contentBg: #eee;
+$alert: #ffc107;
 .sidenav {
     background-color: $mainBg;
     margin-top: 80px;
@@ -16,6 +17,19 @@ nav {
         ul {
             padding-top: 5px;
         }
+    }
+    .alert {
+        background-color: $alert;
+        width: 15px;
+        margin: 0 auto;
+        height: 15px;
+        border-radius: 50%;
+        color: #fff;
+        font-weight: bold;
+        position: relative;
+        right: -9px;
+        bottom: 63px;
+        display: block;
     }
     i {
         color: #fff;

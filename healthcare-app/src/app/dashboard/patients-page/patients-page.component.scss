@@ -1,12 +1,52 @@
+$mainBg: #03a9f4;
 $goodState: #cddc39;
 $fairState: #ffc107;
 $seriousState: #ef5350;
 $alert: #ffc107;
+$onWhite: #757575;
+.input-field {
+    margin: 0;
+}
+
+.navColumn {
+    padding-right: 0;
+}
+
+nav {
+    color: $onWhite;
+    .input-field label.active i {
+        color: $onWhite;
+    }
+    height: 45px;
+    background-color: unset;
+    i {
+        color: $onWhite;
+        line-height: 46px;
+    }
+    #search {
+        margin: 0;
+        height: 45px;
+    }
+}
+
 .patientsTable {
     tbody {
+        button {
+            padding: 0;
+            background-color: unset;
+            box-shadow: unset;
+            i {
+                margin: 0;
+                color: $onWhite;
+            }
+        }
         td {
             padding: 5px 5px;
         }
+    }
+    .ssn,
+    .carePlan {
+        color: $onWhite;
     }
     .goodState {
         background-color: $goodState;
@@ -45,6 +85,19 @@ $alert: #ffc107;
             width: 50px;
             height: 50px;
             margin-right: 10px;
+            cursor: pointer;
         }
+    }
+}
+
+.pagination {
+    .active {
+        background-color: $onWhite;
+    }
+}
+
+.fixed-action-btn {
+    a:first-child {
+        background-color: $mainBg;
     }
 }

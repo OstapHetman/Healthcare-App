@@ -12,6 +12,7 @@ export class PatientsPageComponent implements OnInit {
 
   ngOnInit() {
     $('.collapsible').collapsible();
+    $('select').material_select();
   }
 
 }
